@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "main aside" 
+        "footer footer";   
+    grid-template-columns: 50% 50%;
+}
+
+body, header, main, footer {
+    background: #121214;;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 15%;
+}
+
+header {
+    padding: 0 0 20px 0;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    background: #121214;
+    grid-area: main;
+    padding: 5% 10%;
+}
+
+article h2 {
+    color: #04D361;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+div.input-box {
+    display: flex;
+    height: 45px;
+    margin-top: 13px;
+    width: 100%;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+input, button {
+    border: none;
+    height: 100%;
+    outline: 0;
+    padding: 0 10px;
+}
+
+input {
+    border-left: 5px solid #04D361;
+    width: 100%;
+    font-size: 20px;
+}
+
+button {
+    align-items: center;
+    display: flex;
+    background: #8257e5;
+    width: 50px;
+}
+
+button img {
+    transition: all 1.2s;
+}
+
+button img:hover {
+    transform: scale(1.2);
+}
+
+aside {
+    grid-area: aside;
+    position: relative;
+}
+
+aside img {
+    height: 100%;
+    min-width: 800px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+footer {
+    position: relative;
+    background: #121214;
+    grid-area: footer;
+    text-align: center;
+}
+
+.tnb {
+    margin: 10px 0;
+}
+
+.tnb-text {
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.tnb p {
+    margin: 5px 0;
+}
+
+.tnb-text strong, .tnb-text a {
+    color: #8257e5;
+}
+
+.tnb-text a:hover {
+    color: #b7a5e0;
+    text-decoration: underline;
+}
+
+.tnb-icons img {
+    border-radius: 3px;
+    height: 25px;
+    padding: 0 2px;
+}
+
+.tnb-icons img {
+    -webkit-filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(47deg) brightness(116%) contrast(92%);
+            filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(47deg) brightness(116%) contrast(92%);
+}
+
+.tnb-icons img:hover {
+    -webkit-filter: invert(54%) sepia(60%) saturate(7082%) hue-rotate(239deg) brightness(95%) contrast(88%);
+            filter: invert(54%) sepia(60%) saturate(7082%) hue-rotate(239deg) brightness(95%) contrast(88%);
+}
+
+/* Media queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+}
