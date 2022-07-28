@@ -77,14 +77,14 @@ label {
 input, button {
     border: none;
     height: 100%;
-    outline: 0;
     padding: 0 10px;
 }
 
 input {
     border-left: 5px solid #04D361;
-    width: 100%;
     font-size: 20px;
+    outline: initial;
+    width: 100%;
 }
 
 button {
